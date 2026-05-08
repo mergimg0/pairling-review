@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pairling App Review Assets</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f5f7fb;
+        --fg: #121418;
+        --muted: #5f6672;
+        --line: #d9dee7;
+        --accent: #0a84ff;
+        --card: #ffffff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.45;
+      }
+
+      main {
+        width: min(1120px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 48px 0 64px;
+      }
+
+      header {
+        margin-bottom: 28px;
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 24px;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: clamp(34px, 6vw, 64px);
+        letter-spacing: 0;
+      }
+
+      h2 {
+        margin: 0 0 10px;
+        font-size: 22px;
+        letter-spacing: 0;
+      }
+
+      p {
+        margin: 0;
+        max-width: 780px;
+        color: var(--muted);
+        font-size: 17px;
+      }
+
+      .meta {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 12px;
+        margin: 24px 0 34px;
+      }
+
+      .meta div,
+      figure {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+      }
+
+      .meta div {
+        padding: 14px 16px;
+      }
+
+      .label {
+        display: block;
+        color: var(--muted);
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .value {
+        display: block;
+        margin-top: 4px;
+        font-size: 16px;
+        font-weight: 650;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 18px;
+        margin-top: 20px;
+      }
+
+      figure {
+        margin: 0;
+        overflow: hidden;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        background: #eceff5;
+      }
+
+      figcaption {
+        padding: 14px 16px 16px;
+      }
+
+      figcaption strong {
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      figcaption span {
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      footer {
+        margin-top: 36px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Pairling Review Assets</h1>
+        <p>
+          Pairling is an iPhone companion for agent sessions running on a user's
+          own Mac. These pre-release captures show the pairing, connection, and
+          session-control surfaces used for Apple entitlement review.
+        </p>
+      </header>
+
+      <section class="meta" aria-label="App metadata">
+        <div>
+          <span class="label">App</span>
+          <span class="value">Pairling</span>
+        </div>
+        <div>
+          <span class="label">Bundle ID</span>
+          <span class="value">dev.pairling.ios</span>
+        </div>
+        <div>
+          <span class="label">Team ID</span>
+          <span class="value">965AVD34A3</span>
+        </div>
+        <div>
+          <span class="label">Developer</span>
+          <span class="value">Mergim Gashi</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Screenshots</h2>
+        <p>
+          The device and Mac names shown here are used only to help the person
+          using Pairling identify which personal devices are paired.
+        </p>
+
+        <div class="grid">
+          <figure>
+            <a href="assets/pair-mac-unpaired.png">
+              <img src="assets/pair-mac-unpaired.png" alt="Pairling Pair Mac screen before pairing">
+            </a>
+            <figcaption>
+              <strong>Pair Mac</strong>
+              <span>First-run pairing surface for connecting to a user-owned Mac helper.</span>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <a href="assets/paired-shell.png">
+              <img src="assets/paired-shell.png" alt="Pairling paired shell showing paired Mac name">
+            </a>
+            <figcaption>
+              <strong>Paired Device Identity</strong>
+              <span>Friendly device names help the user confirm the current paired Mac.</span>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <a href="assets/connection-settings.png">
+              <img src="assets/connection-settings.png" alt="Pairling connection settings and phone tools listener">
+            </a>
+            <figcaption>
+              <strong>Connection Settings</strong>
+              <span>Local network endpoint, token field, and foreground-only phone tools listener.</span>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <a href="assets/dashboard-active.png">
+              <img src="assets/dashboard-active.png" alt="Pairling dashboard with active sessions">
+            </a>
+            <figcaption>
+              <strong>Dashboard</strong>
+              <span>Session overview and Mac health state after pairing.</span>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <a href="assets/session-streaming.png">
+              <img src="assets/session-streaming.png" alt="Pairling session detail with streaming transcript">
+            </a>
+            <figcaption>
+              <strong>Session Detail</strong>
+              <span>Transcript and control surface for a local agent session.</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <footer>
+        Review contact: Mergim Gashi, mergim000gashi@gmail.com
+      </footer>
+    </main>
+  </body>
+</html>
